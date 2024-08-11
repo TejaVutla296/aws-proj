@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AWS Quiz</h1>
+        <p class="instructions">Marking Instructions: +4 for each correct answer, -1 for each wrong answer.</p>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Which of the following is a managed service provided by AWS for hosting relational databases?</p>
+                <label><input type="radio" name="q1" value="a"> a) Amazon EC2</label><br>
+                <label><input type="radio" name="q1" value="b"> b) Amazon S3</label><br>
+                <label><input type="radio" name="q1" value="c"> c) Amazon RDS</label><br>
+                <label><input type="radio" name="q1" value="d"> d) Amazon Lambda</label>
+            </div>
+            <hr>
+            <div class="question">
+                <p>2. What is the primary use case of Amazon S3?</p>
+                <label><input type="radio" name="q2" value="a"> a) Running virtual servers</label><br>
+                <label><input type="radio" name="q2" value="b"> b) Hosting a relational database</label><br>
+                <label><input type="radio" name="q2" value="c"> c) Object storage</label><br>
+                <label><input type="radio" name="q2" value="d"> d) Data analytics</label>
+            </div>
+            <hr>
+            <div class="question">
+                <p>3. Which AWS service is used to route end users to applications based on conditions such as location or latency?</p>
+                <label><input type="radio" name="q3" value="a"> a) Amazon CloudFront</label><br>
+                <label><input type="radio" name="q3" value="b"> b) Amazon Route 53</label><br>
+                <label><input type="radio" name="q3" value="c"> c) Amazon VPC</label><br>
+                <label><input type="radio" name="q3" value="d"> d) AWS Direct Connect</label>
+            </div>
+            <hr>
+            <div class="question">
+                <p>4. Which AWS service is used for real-time data processing?</p>
+                <label><input type="radio" name="q4" value="a"> a) Amazon Redshift</label><br>
+                <label><input type="radio" name="q4" value="b"> b) Amazon Kinesis</label><br>
+                <label><input type="radio" name="q4" value="c"> c) Amazon S3</label><br>
+                <label><input type="radio" name="q4" value="d"> d) AWS Lambda</label>
+            </div>
+            <hr>
+            <div class="question">
+                <p>5. Which of the following AWS services is serverless?</p>
+                <label><input type="radio" name="q5" value="a"> a) Amazon EC2</label><br>
+                <label><input type="radio" name="q5" value="b"> b) Amazon RDS</label><br>
+                <label><input type="radio" name="q5" value="c"> c) AWS Lambda</label><br>
+                <label><input type="radio" name="q5" value="d"> d) Amazon VPC</label>
+            </div>
+            <hr>
+            <div class="question">
+                <p>6. What is the main function of Amazon CloudWatch?</p>
+                <label><input type="radio" name="q6" value="a"> a) Monitoring AWS resources and applications</label><br>
+                <label><input type="radio" name="q6" value="b"> b) Securing web applications</label><br>
+                <label><input type="radio" name="q6" value="c"> c) Storing and managing secrets</label><br>
+                <label><input type="radio" name="q6" value="d"> d) Running Docker containers</label>
+            </div>
+            <hr>
+            <div class="question">
+                <p>7. Which AWS service allows you to run Docker containers at scale?</p>
+                <label><input type="radio" name="q7" value="a"> a) Amazon Elastic Container Service (ECS)</label><br>
+                <label><input type="radio" name="q7" value="b"> b) AWS CloudFormation</label><br>
+                <label><input type="radio" name="q7" value="c"> c) Amazon CloudFront</label><br>
+                <label><input type="radio" name="q7" value="d"> d) Amazon Route 53</label>
+            </div>
+            <hr>
+            <div class="question">
+                <p>8. Which of the following is a fully managed machine learning service provided by AWS?</p>
+                <label><input type="radio" name="q8" value="a"> a) Amazon SageMaker</label><br>
+                <label><input type="radio" name="q8" value="b"> b) AWS Glue</label><br>
+                <label><input type="radio" name="q8" value="c"> c) AWS Lambda</label><br>
+                <label><input type="radio" name="q8" value="d"> d) Amazon Redshift</label>
+            </div>
+            <hr>
+            <div class="question">
+                <p>9. Which AWS service is best suited for building a data warehouse?</p>
+                <label><input type="radio" name="q9" value="a"> a) Amazon DynamoDB</label><br>
+                <label><input type="radio" name="q9" value="b"> b) Amazon Redshift</label><br>
+                <label><input type="radio" name="q9" value="c"> c) Amazon S3</label><br>
+                <label><input type="radio" name="q9" value="d"> d) AWS CloudTrail</label>
+            </div>
+            <hr>
+            <div class="question">
+                <p>10. What is the primary benefit of using AWS Elastic Load Balancing (ELB)?</p>
+                <label><input type="radio" name="q10" value="a"> a) Storing large amounts of data</label><br>
+                <label><input type="radio" name="q10" value="b"> b) Distributing incoming traffic across multiple targets</label><br>
+                <label><input type="radio" name="q10" value="c"> c) Automating the deployment of applications</label><br>
+                <label><input type="radio" name="q10" value="d"> d) Analyzing big data</label>
+            </div>
+            <hr>
+            <button type="button" onclick="calculateScore()">Submit</button>
+            <button type="button" id="resetButton" style="display: none;" onclick="resetQuiz()">Reset</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
